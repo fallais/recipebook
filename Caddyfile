@@ -1,5 +1,6 @@
 :2015 {
   root /srv
+  index index.html
 
   gzip
 
