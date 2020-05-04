@@ -1,17 +1,21 @@
 {{ define "main" }}
 <div class="ui main text container">
-  <h1>{{ .Title }} {{ if .Params.is_vegan }}<span class="ui green mini label">vegan</span>{{ end }}{{ if .Params.is_vegetarian }}<span class="ui olive mini label">vegetarian</span>{{ end }}</h1>
+  <h1>{{ .Title }} {{ if .Params.is_vegan }}<span class="ui green mini label">végan</span>{{ end }}{{ if .Params.is_vegetarian }}<span class="ui olive mini label">végétarien</span>{{ end }}</h1>
 
   {{ with .Params.preparation_time}}
-  <i class="clock icon"></i> {{ . }}
+  <p><i class="clock icon"></i> {{ . }}</p>
   {{ end }}
   {{ with .Params.cooking_time }}
-  <i class="fire icon"></i> {{ . }}
+  <p><i class="fire icon"></i> {{ . }}</p>
   {{ end }}
   {{ with .Params.quantity }}
-  <i class="user icon"></i> {{ . }}
+  <p><i class="user icon"></i> {{ . }}</p>
   {{ end }}
 
   <p>{{ .Content }}</p>
+
+  {{ with .Params.source }}
+  <div class="ui message"><b>Source</b> : {{ . }}</div>
+  {{ end }}
 </div>
 {{ end }}

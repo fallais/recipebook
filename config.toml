@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "fr-FR"
 title = "Recettes"
+paginate = 100
 
 [taxonomies]
   tag = "tags"
