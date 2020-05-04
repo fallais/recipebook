@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="ui main text container">
   <div class="ui items">
-    {{ range .Paginator.Pages }}
+    {{ range shuffle .Paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}
   </div>

@@ -13,9 +13,10 @@
     <div class="ui fixed massive inverted menu">
       <div class="ui container">
         <a href="/" class="header item">Recettes</a>
-        {{ range .Sections }}
-        <a href="/{{ .Section }}" class="item"><img src="/{{ .Section }}.png" width="5" />{{ .Title }}</a>
-        {{ end }}
+        <a href="/bases" class="item"><img class="ui mini image" src="/bases.png" />Bases</a>
+        <a href="/salty" class="item"><img class="ui mini image" src="/salty.png" />Salées</a>
+        <a href="/sweety" class="item"><img class="ui mini image" src="/sweety.png" />Sucrées</a>
+        <a href="/sauces" class="item"><img class="ui mini image" src="/sauces.png" />Sauces</a>
       </div>
     </div>
     
