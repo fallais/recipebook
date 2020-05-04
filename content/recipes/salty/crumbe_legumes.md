@@ -5,6 +5,7 @@ draft: false
 source: 
 tags: ['crumble', 'legume']
 is_vegan: true
+is_vegetarian: true
 ---
 
 ## Ingrédients

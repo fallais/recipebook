@@ -17,16 +17,19 @@
 
       <h1>{{ .Title }}</h1>
 
-      <span>
-      {{ if .Params.is_vegan }}
-      <img class="ui mini circular image" src="/vegan.png" />
-      {{ end }}
-      {{ if .Params.is_vegetarian }}
-      <img class="ui mini circular image" src="/vegetarian.png" />
-      {{ end }}
-    </span>
+      <div class="ui images">
+        {{ if .Params.is_vegan }}
+        <img class="ui image" src="/vegan.png" />
+        {{ end }}
+        {{ if .Params.is_vegetarian }}
+        <img class="ui image" src="/vegetarian.png" />
+        {{ end }}
+      </div>
 
+      {{ if (fileExists "static/images/{{ .File.BaseFileName }}.jpg") -}}
       <img class="ui image" src="/images/{{ .File.BaseFileName }}.jpg" />
+      {{- end }}
+
       <p>{{ .Content }}</p>
     </div>
     
