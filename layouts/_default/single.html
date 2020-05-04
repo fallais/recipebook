@@ -2,9 +2,15 @@
 <div class="ui main text container">
   <h1>{{ .Title }} {{ if .Params.is_vegan }}<span class="ui green mini label">vegan</span>{{ end }}{{ if .Params.is_vegetarian }}<span class="ui olive mini label">vegetarian</span>{{ end }}</h1>
 
-  {{ if (fileExists "static/images/{{ .File.BaseFileName }}.jpg") -}}
-  <img class="ui image" src="/images/{{ .File.BaseFileName }}.jpg" />
-  {{- end }}
+  {{ with .Params.preparation_time}}
+  <i class="clock icon"></i> {{ . }}
+  {{ end }}
+  {{ with .Params.cooking_time }}
+  <i class="fire icon"></i> {{ . }}
+  {{ end }}
+  {{ with .Params.quantity }}
+  <i class="user icon"></i> {{ . }}
+  {{ end }}
 
   <p>{{ .Content }}</p>
 </div>
