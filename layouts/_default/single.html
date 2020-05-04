@@ -1,37 +1,22 @@
-<!DOCTYPE html>
-<html lang="fr-FR">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+{{ define "main" }}
+<div class="ui main text container">
+  {{ partial "breadcrumb.html" .}}
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-  </head>
-  
-  <body>
-    {{ partial "menu.html" .}}
+  <h1>{{ .Title }}</h1>
 
-    <div class="ui main text container">
-      {{ partial "breadcrumb.html" .}}
+  <div class="ui images">
+    {{ if .Params.is_vegan }}
+    <img class="ui image" src="/vegan.png" />
+    {{ end }}
+    {{ if .Params.is_vegetarian }}
+    <img class="ui image" src="/vegetarian.png" />
+    {{ end }}
+  </div>
 
-      <h1>{{ .Title }}</h1>
+  {{ if (fileExists "static/images/{{ .File.BaseFileName }}.jpg") -}}
+  <img class="ui image" src="/images/{{ .File.BaseFileName }}.jpg" />
+  {{- end }}
 
-      <div class="ui images">
-        {{ if .Params.is_vegan }}
-        <img class="ui image" src="/vegan.png" />
-        {{ end }}
-        {{ if .Params.is_vegetarian }}
-        <img class="ui image" src="/vegetarian.png" />
-        {{ end }}
-      </div>
-
-      {{ if (fileExists "static/images/{{ .File.BaseFileName }}.jpg") -}}
-      <img class="ui image" src="/images/{{ .File.BaseFileName }}.jpg" />
-      {{- end }}
-
-      <p>{{ .Content }}</p>
-    </div>
-    
-  </body>
-</html>
+  <p>{{ .Content }}</p>
+</div>
+{{ end }}

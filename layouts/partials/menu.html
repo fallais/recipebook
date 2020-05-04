@@ -1,9 +1,8 @@
 <div class="ui fixed massive inverted menu">
   <div class="ui container">
     <a href="/" class="header item">Recettes</a>
-    <a class="item">Bases</a>
-    <a class="item">Sauces</a>
-    <a class="item">Salé</a>
-    <a class="item">Sucré</a>
+    {{ range .Sections }}
+    <a class="item">{{ . }}</a>
+    {{ end }}
   </div>
 </div>

@@ -7,7 +7,7 @@
     {{- end }}
   </a>
   <div class="content">
-    <a href="{{ .Permalink }}" class="header">{{ .Title }}</a>
+    <a href="{{ .Permalink }}" class="header">{{ .Title }} <span class="ui red mini label">{{ .Section }}</span></a>
     <div class="description">
       {{ range .Params.tags }}
       <div class="ui label">{{ . }}</div>

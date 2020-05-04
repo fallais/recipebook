@@ -10,15 +10,13 @@
   </head>
   
   <body>
-    {{ partial "menu.html" .}}
+    {{ block "menu" . }}
+      {{ partial "menu" .}}
+    {{ end }}
+    
 
-    <div class="ui main text container">
-      <div class="ui items">
-        {{ range .Paginator.Pages }}
-          {{- partial "summary.html" . -}}
-        {{ end }}
-      </div>
-    </div>
+    {{ block "main" . }}
+    {{ end }}
   </body>
 
   

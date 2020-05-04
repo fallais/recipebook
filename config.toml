@@ -1,3 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "fr-FR"
 title = "Recettes"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
