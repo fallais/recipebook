@@ -3,7 +3,8 @@ title: "Galette végétale au riz et à la carotte"
 date: 2020-05-03T10:29:03+02:00
 source: 
 tags: ['galette', 'legume']
-is_vegan: true
+is_vegan: false
+is_vegetarian: true
 ---
 
 ## Ingrédients
