@@ -10,9 +10,14 @@
   </head>
   
   <body>
-    {{ block "menu" . }}
-      {{ partial "menu" .}}
-    {{ end }}
+    <div class="ui fixed massive inverted menu">
+      <div class="ui container">
+        <a href="/" class="header item">Recettes</a>
+        {{ range .Sections }}
+        <a href="/{{ .Section }}" class="item"><img src="/{{ .Section }}.png" width="5" />{{ .Title }}</a>
+        {{ end }}
+      </div>
+    </div>
     
 
     {{ block "main" . }}

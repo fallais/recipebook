@@ -3,5 +3,4 @@ languageCode = "fr-FR"
 title = "Recettes"
 
 [taxonomies]
-  category = "categories"
   tag = "tags"

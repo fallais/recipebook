@@ -1,16 +1,12 @@
 <div class="item">
   <a class="ui tiny image">
-    {{ if (fileExists "static/images/{{ .File.BaseFileName }}.jpg") -}}
-    <img src="/images/{{ .File.BaseFileName }}.jpg">
-    {{- else }}
-    <img src="/no_image.png">
-    {{- end }}
+    <img class="ui tiny image" src="/{{ .Section }}.png">
   </a>
   <div class="content">
-    <a href="{{ .Permalink }}" class="header">{{ .Title }} <span class="ui red mini label">{{ .Section }}</span></a>
+    <a href="{{ .Permalink }}" class="header">{{ .Title }} {{ if .Params.is_vegan }}<span class="ui green mini label">vegan</span>{{ end }}{{ if .Params.is_vegetarian }}<span class="ui olive mini label">vegetarian</span>{{ end }}</a>
     <div class="description">
       {{ range .Params.tags }}
-      <div class="ui label">{{ . }}</div>
+      <a href="/tags/{{ . | urlize }}"><div class="ui label">{{ . }}</div></a>
       {{ end }}
     </div>
   </div>
