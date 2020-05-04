@@ -1,14 +1,17 @@
 <div class="item">
-<!--   <div class="image">
-    <img src="images/{{ .File.BaseFileName }}.jpg">
-  </div> -->
+  <a class="ui tiny image">
+    {{ if (fileExists "static/images/{{ .File.BaseFileName }}.jpg") -}}
+    <img src="/images/{{ .File.BaseFileName }}.jpg">
+    {{- else }}
+    <img src="/no_image.png">
+    {{- end }}
+  </a>
   <div class="content">
-    <a class="header" href="{{ .Permalink }}">{{ .Title }}</a>
-    <div class="meta">
-      <span>{{ .Params.tags }}</span>
-    </div>
+    <a href="{{ .Permalink }}" class="header">{{ .Title }}</a>
     <div class="description">
-      <p>{{ .Summary  }}</p>
+      {{ range .Params.tags }}
+      <div class="ui label">{{ . }}</div>
+      {{ end }}
     </div>
   </div>
 </div>
