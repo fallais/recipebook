@@ -1,8 +1,7 @@
 ---
 title: "Caviar d’aubergine aux olives noires"
-date: 2020-05-03T10:29:03+02:00
-source: 
-tags: ['galette', 'legume']
+source: https://patateetcornichon.com/recettes/caviar-daubergine-aux-olives-noires
+tags: ['apéro', 'aubergines']
 is_vegan: false
 is_vegetarian: true
 preparation_time: 10 min

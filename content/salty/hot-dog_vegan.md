@@ -2,7 +2,7 @@
 title: "Hot-dogs vegan"
 date: 2020-05-03T10:29:03+02:00
 source: 
-tags: ['riz', 'legumes', 'asperges']
+tags: ['oignon', 'haricot', 'fast-food']
 is_vegan: true
 is_vegetarian: true
 ---
@@ -13,19 +13,19 @@ Cuisson : 10 min
 
 ## Ingrédients
 
-pains à hot-dogs - 4
-haricots rouges cuits - 200 (g)
-chapelure - 80 (g)
-tomates - 1
-tomates de variétés anciennes - 3
-oignon rouge
-ketchup
-mayonnaise végane
-huile d'olive
-paprika
-piment de cayenne
-sel
-poivre
+- pains à hot-dogs - 4
+- haricots rouges cuits - 200 (g)
+- chapelure - 80 (g)
+- tomates - 1
+- tomates de variétés anciennes - 3
+- oignon rouge
+- ketchup
+- mayonnaise végane
+- huile d'olive
+- paprika
+- piment de cayenne
+- sel
+- poivre
 
 ## Recette
 
