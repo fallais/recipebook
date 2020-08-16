@@ -1,9 +1,11 @@
 {{ define "main" }}
-<div class="ui main text container">
-  <div class="ui items">
-    {{ range shuffle .Paginator.Pages }}
-      {{ .Render "summary" }}
-    {{ end }}
+<div class="ui grid container">
+  <div class="row">
+    <div class="column">
+      {{ range shuffle .Paginator.Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
+    </div>
   </div>
 </div>
 {{ end }}

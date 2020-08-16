@@ -1,13 +1,10 @@
-<div class="item">
-  <a class="ui tiny image">
-    <img class="ui tiny image" src="/{{ .Section }}.png">
-  </a>
+<div class="ui {{ if eq .Section "salty" }}red{{ end }}{{ if eq .Section "sweety" }}blue{{ end }}{{ if eq .Section "bases" }}green{{ end }}{{ if eq .Section "sauces" }}olive{{ end }} segment">
+  <a href="{{ .Permalink }}"><div class="ui medium header">{{ .Title }}</div></a>
   <div class="content">
-    <a href="{{ .Permalink }}" class="header">{{ .Title }} {{ if .Params.is_vegan }}<span class="ui green mini label">vegan</span>{{ end }}{{ if .Params.is_vegetarian }}<span class="ui olive mini label">vegetarian</span>{{ end }}</a>
-    <div class="description">
-      {{ range .Params.tags }}
-      <a href="/tags/{{ . | urlize }}"><div class="ui label">{{ . }}</div></a>
-      {{ end }}
-    </div>
+    {{ if .Params.is_vegan }}<span class="ui green mini label">vegan</span>{{ end }}
+    {{ if .Params.is_vegetarian }}<span class="ui olive mini label">vegetarian</span>{{ end }}
+    {{ range .Params.tags }}
+    <a href="/tags/{{ . | urlize }}"><div class="ui mini label">{{ . }}</div></a>
+    {{ end }}
   </div>
 </div>

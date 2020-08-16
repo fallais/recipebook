@@ -15,15 +15,17 @@
     <div class="ui fixed massive inverted menu">
       <div class="ui container">
         <a href="/" class="header item">Recettes</a>
-        <a href="/bases" class="item"><img class="ui very-mini image" src="/bases.png" /> Bases</a>
-        <a href="/salty" class="item"><img class="ui very-mini image" src="/salty.png" /> Salées</a>
-        <a href="/sweety" class="item"><img class="ui very-mini image" src="/sweety.png" /> Sucrées</a>
-        <a href="/sauces" class="item"><img class="ui very-mini image" src="/sauces.png" /> Sauces</a>
+        <a href="/bases" class="item">Bases</a>
+        <a href="/salty" class="item">Salées</a>
+        <a href="/sweety" class="item">Sucrées</a>
+        <a href="/sauces" class="item">Sauces</a>
       </div>
     </div>
 
-    {{ block "main" . }}
-    {{ end }}
+    <div class="ui main text container">
+      {{ block "main" . }}
+      {{ end }}
+    </div>
   </body>
 
   
