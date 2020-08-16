@@ -10,7 +10,7 @@ is_vegetarian: true
 ## Ingrédients
 
 - 250 g de farine
-- 1 oeufs
+- 1 oeuf
 - 50cl de lait végétal
 - 60g de margarine
 - 1 pincée de sel
