@@ -1,7 +1,5 @@
 ---
 title: "Cookies"
-date: 2020-05-03T10:29:03+02:00
-draft: false
 source: https://patateetcornichon.com/recettes/cookies-vegan
 tags: ['dessert', 'chocolat']
 is_vegan: true

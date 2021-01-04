@@ -1,15 +1,14 @@
 ---
-title: "Gateau Au Chocolat"
-date: 2020-05-03T10:29:03+02:00
+title: "Gateau au chocolat"
 source: https://cuisine-saine.fr/recette-sans-gluten-ni-lait/gateau-au-chocolat-sans-gluten-sans-produit-laitier/
 tags: ['dessert', 'chocolat']
 is_vegan: false
 is_vegetarian: true
 ---
 
-Pour 8 personnes  
-Temps de préparation : 10 min  
-Temps de cuisson : 20 min  
+Pour 8 personnes
+Temps de préparation : 10 min
+Temps de cuisson : 20 min
 
 ## Ingrédients
 
